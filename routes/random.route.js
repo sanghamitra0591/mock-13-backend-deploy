@@ -11,7 +11,7 @@ randomRouter.get("/", (req, res)=>{
         const no= Math.ceil(Math.random()*26);
         random+=arr[no];
     }
-    res.send(random);
+    res.send({"random":random});
 })
 
 
